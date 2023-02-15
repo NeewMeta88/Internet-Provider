@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ваши услуги</title>
+</head>
+<body>
+
+<center>
+<table border = 1 width = 80%>
+      <tr>
+          <td  class = border align = center>Номер товара</td>
+         <td  class = border align = center>Дата начала</td>
+          <td  class = border align = center>Дата окончания</td>
+      </tr>
+     {%for product in items%}<tr>
+        <td align=center>{{product['prod_id']}}</td>
+        <td align=center> {{product['start_date']}}</td>
+        <td align=center>{{product['end_date']}}</td>
+     </tr>
+      {% endfor %}
+    </table>
+
+    <a href="{{ url_for('menu_choice') }}">Возврат в меню</a>
+</center>
+
+</body>
+</html>

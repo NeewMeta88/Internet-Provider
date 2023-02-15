@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block external_user %}
+<p align="center">
+    <a href="{{ url_for('blueprint_market.market_index') }}">В каталог</a><br><br>
+    <a href="{{ url_for('blueprint_market.active') }}">Активные услуги</a><br><br>
+    <a href="/exit"> Нажмите для выхода из системы</a>
+</p>
+{% endblock %}

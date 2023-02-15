@@ -1,0 +1,1 @@
+SELECT max(sale_date) FROM internet.sales;

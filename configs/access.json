@@ -1,0 +1,13 @@
+{
+  "analitic": [
+    "blueprint_report_view"
+  ],
+  "manager": [
+    "blueprint_market",
+    "blueprint_report",
+    "blueprint_check"
+  ],
+  "client": [
+    "blueprint_market"
+  ]
+}

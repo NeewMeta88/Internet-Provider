@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block internal_user %}
+<p align="center">
+    {% if allow %}
+    <a href="{{ url_for('blueprint_report.add_item') }}">Добавить товар</a><br><br>
+    <a href="{{ url_for('blueprint_report.remove_item') }}">Удалить товар</a><br><br>
+    <a href="{{ url_for('blueprint_check.check_item') }}">Посмотреть товары</a><br><br>
+    {% else %}
+    <a href="{{ url_for('blueprint_report_view.create_report') }}">Создать отчеты</a><br><br>
+    <a href="{{ url_for('blueprint_report_view.view_report') }}">Посмотреть отчеты</a><br><br>
+    <a href="{{ url_for('blueprint_report_view.view_active') }}">Посмотреть активные услуги клиента</a><br><br>
+    {% endif %}
+
+    <a href="/exit"> Нажмите для выхода из системы</a>
+</p>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report_result</title>
+    <link href="{{ url_for('blueprint_check.static', filename='css/report.css') }}" rel="stylesheet">
+</head>
+<body>
+{% import 'components.html' as components %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <center>
+            {% if not items %}
+                <h1>Нет товаров по вашим требованиям</h1>
+            {% else %}
+                {{ components.render_content(items=items) }}
+            {% endif %}
+            </center>
+        </div>
+    <div align="center">
+        <a href="{{ url_for('menu_choice') }}">Возврат в меню</a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+INSERT INTO `internet`.`orders` (`user_id`) VALUES ('$user_id');

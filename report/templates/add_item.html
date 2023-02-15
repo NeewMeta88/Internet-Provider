@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report_result</title>
+    <link type="text/css" href="static/main.css" rel="stylesheet">
+</head>
+<body>
+      <h1 align="center"> Введите название товара и его цену</h1> <br><br>
+  <div align="center">
+      <form method="POST" action="">
+          <label for="item_name"> Название</label>
+          <input type="text" id="item_name" name="item_name"><br><br>
+
+          <label for="item_price"> Цена </label>
+          <input type="text" name="item_price" id="item_price"><br><br>
+
+          <input type="submit" class="submit" value="Отправить">
+      </form>
+      <br><br>
+      <h2 align="center">{{ message }}</h2>
+  </div>
+    <div align="center">
+        <a href="{{ url_for('menu_choice') }}">Возврат в меню</a>
+    </div>
+</body>
+</html>

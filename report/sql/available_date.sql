@@ -1,0 +1,1 @@
+SELECT month(available_date) as month, year(available_date) as year FROM internet.reports_date order by month DESC;

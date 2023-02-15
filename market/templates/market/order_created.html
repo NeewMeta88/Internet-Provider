@@ -1,0 +1,10 @@
+{% extends 'market/base.html' %}
+{% block index %}
+
+{% if order_id != '0' %}
+<p>Заказ номер {{order_id}} успешно создан!</p>
+{% else %}
+<p>Ошибка при создании заказа!</p>
+{% endif%}
+<a href="{{url_for('blueprint_market.market_index')}}">В каталог</a>
+{% endblock %}

@@ -1,0 +1,1 @@
+call internet.generate_report('$month', '$year');

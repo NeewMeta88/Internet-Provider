@@ -1,0 +1,1 @@
+SELECT interval_num FROM internet.interval where order_id='$order_id';

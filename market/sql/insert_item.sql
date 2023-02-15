@@ -1,0 +1,1 @@
+insert into sales (`order_id`, `prod_id`, `amount`) values('$order_id', '$prod_id', '$cnt')
